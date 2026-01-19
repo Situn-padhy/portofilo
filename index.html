@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Situn Padhy | Portfolio</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main">
+
+    <!-- LEFT PROFILE -->
+    <div class="profile">
+        <img src="profile.jpg" alt="Situn Padhy Photo">
+
+        <h2>Situn Padhy</h2>
+        <p class="role">B.Tech CSE | Java Developer</p>
+
+        <p class="contact-info">
+            📞 7608000276 <br>
+            📧 situnpadhy168@gmail.com
+        </p>
+
+        <div class="social">
+            <a class="linkedin" href="https://www.linkedin.com/in/situn-padhy-53a243247" target="_blank">LinkedIn</a>
+            <a class="github" href="https://github.com/Situn-padhy/java-practice" target="_blank">GitHub</a>
+            <a href="javascript:void(0)" class="msg-icon" onclick="openChat()">💬</a>
+        </div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="content">
+
+        <button class="toggle" onclick="toggleMode()">🌙 Dark / Light</button>
+
+        <h1>Hello</h1>
+        <p>
+            I am a Computer Science student learning Java and Web Development.
+        </p>
+
+        <a class="btn primary" href="Situn_Padhy_Resume.pdf" download>
+            ⬇ Download Resume
+        </a>
+
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">Portfolio Website</div>
+            <div class="project">Student Management System (Java)</div>
+            <div class="project">QR Attendance System</div>
+        </div>
+
+        <h2>Certificates</h2>
+        <ul>
+            <li>Core Java Training – CTTC Bhubaneswar</li>
+            <li>Full Stack Java (Ongoing) – JSpiders</li>
+        </ul>
+
+    </div>
+</div>
+
+<!-- CHAT POPUP -->
+<div id="chatPopup" class="chat-popup">
+
+    <div class="chat-header">
+        <span>💬 Send Message</span>
+        <button onclick="closeChat()">✖</button>
+    </div>
+
+    <form action="mailto:situnpadhy168@gmail.com" method="POST" enctype="text/plain" class="chat-form">
+
+        <input type="text" name="Name" placeholder="👤 Your Name" required>
+        <input type="email" name="Email" placeholder="📧 Your Email" required>
+        <textarea name="Message" rows="4" placeholder="💬 Your Message" required></textarea>
+
+        <button type="submit" class="btn primary">Send</button>
+    </form>
+</div>
+
+<script>
+function openChat() {
+    document.getElementById("chatPopup").style.display = "block";
+}
+function closeChat() {
+    document.getElementById("chatPopup").style.display = "none";
+}
+function toggleMode() {
+    document.body.classList.toggle("dark");
+}
+</script>
+
+</body>
+</html>
